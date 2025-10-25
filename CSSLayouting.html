@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 200px;
+        background: rgb(34, 34, 66);
+      }
+
+      #red {
+        background-color: red;
+      }
+
+      #blue {
+        background-color: blue;
+      }
+
+      #green {
+        background-color: green;
+      }
+
+      .grid-container {
+        padding: 20px;
+        height: 200px;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        gap: 20px;
+        background: purple;
+      }
+
+      .grid-container div {
+        background: green;
+        color: white;
+        padding: 20px;
+      }
+
+      .position-container {
+        width: 300px;
+        font-size: x-large;
+        padding: 5px;
+        margin: 10px;
+      }
+
+      .box1 {
+        position: fixed;
+        background-color: rgb(6, 6, 91);
+      }
+
+      .box2 {
+        position: sticky;
+        top: 0;
+      }
+      .arr1 {
+        background: red;
+        color: white;
+        width: 50%;
+        float: left;
+        margin-top: 10px;
+      }
+      .arr2 {
+        background: blue;
+        color: white;
+        width: 50%;
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="position-container">
+      <div class="box1">box 1 fixed</div>
+      <div class="box2">box 2 sticky</div>
+    </div>
+
+    <div class="container">
+      <div id="red">box 1</div>
+      <div id="blue">box 2</div>
+      <div id="green">box 3</div>
+    </div>
+
+    <div class="grid-container">
+      <div>box 1</div>
+      <div>box 2</div>
+      <div>box 3</div>
+      <div>box 4</div>
+      <div>box 5</div>
+    </div>
+
+    <div class="arr1">
+      <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt totam
+        voluptate iusto dicta laudantium quasi sapiente sed debitis dolores?
+        Nulla porro quas distinctio, mollitia facilis animi expedita eos itaque
+        laudantium.
+      </article>
+    </div>
+
+    <div class="arr2">
+      <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt totam
+        voluptate iusto dicta laudantium quasi sapiente sed debitis dolores?
+        Nulla porro quas distinctio, mollitia facilis animi expedita eos itaque
+        laudantium.
+      </article>
+    </div>
+  </body>
+</html>
